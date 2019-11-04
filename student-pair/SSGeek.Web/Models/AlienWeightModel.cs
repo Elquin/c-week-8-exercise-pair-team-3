@@ -23,6 +23,11 @@ namespace SSGeek.Web.Models
         {
             EarthWeight = earthWeight;
             Planet = planet;
+
+        }
+        public AlienWeightModel()
+        {
+
         }
 
         public Dictionary<string, double> Planets = new Dictionary<string, double>()
