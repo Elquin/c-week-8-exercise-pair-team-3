@@ -1,9 +1,45 @@
-﻿
+﻿@model AlienWeightModel
 @{
     ViewData["Title"] = "Alien Weight";
 }
 
 <section class="centeredPanel">
+ <form method="get" asp-controller="Calculators" asp-action="AlienWeight">
+     <div>
+         <label ="AlienWeightForm">Alien Weight calculator: </label>
+             <table>
+                 <tr>
+                     <select name="Planet">
+                         <option value="Mercury">Mercury</option>
+                         <option value="Venus">Venus</option>
+                         <option value="Mars">Mars</option>
+                         <option value="Jupiter">Jupiter</option>
+                         <option value="Saturn">Saturn</option>
+                         <option value="Mercury">Uranus</option>
+                         <option value="Mercury">Neptune</option>
+
+                         @*@{
+                        foreach(KeyValuePair<string, double> planet in Model.Planets)
+                        {
+                            <td>@planet.Key</td>
+                         }
+                    }*@
+                     </select>
+                 </tr>
 
 
+
+             </table>
+         
+     </div>
+
+
+
+
+
+
+
+
+
+</form>
 </section>

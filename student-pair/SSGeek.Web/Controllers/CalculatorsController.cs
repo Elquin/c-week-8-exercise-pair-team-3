@@ -16,7 +16,7 @@ namespace SSGeek.Web.Controllers
         // - create a new action to process the form submission (e.g. AlienAgeResult, AlienWeightResult, etc.)
         // - create a view that displays the submitted form result
 
-        
+
         // GET: Calculators/AlienWeight
         public ActionResult AlienWeight()
         {
