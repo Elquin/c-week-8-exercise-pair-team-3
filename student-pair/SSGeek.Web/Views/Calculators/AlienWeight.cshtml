@@ -6,9 +6,10 @@
 <section class="centeredPanel">
  <form method="get" asp-controller="Calculators" asp-action="AlienWeightResult">
      <div>
+         <h1 id="alienWeightTitle">Alien Weight Calculator</h1>
          <label for="AlienWeightForm">Alien Weight calculator: </label>
-         @*<table>
-             <tr>*@
+         <table>
+             @*<tr>*@
                  <select name="Planet">
                      <option value="Mercury">Mercury</option>
                      <option value="Venus">Venus</option>
@@ -24,8 +25,8 @@
                          }
                     }*@
                  </select>
-             @*</tr>
-         </table>*@
+             @*</tr>*@
+         </table>
          <br/>
          <label for="AlienWeightForm"> Enter your earth weight:</label>
          <input name="earthWeight" type="text" />
