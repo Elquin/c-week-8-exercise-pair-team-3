@@ -30,7 +30,7 @@ namespace SSGeek.Web.Models
 
         }
 
-        public Dictionary<string, double> Planets = new Dictionary<string, double>()
+        public static Dictionary<string, double> Planets = new Dictionary<string, double>()
         {
             { "Mercury", 0.37},
             { "Venus", 0.90},
