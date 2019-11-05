@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "AlienTravel";
+}
+
+<section class="centeredPanel">
+    <form method="get" asp-controller="Calculators" asp-action="AlienTravelResults">
+        <div>
+            <h1 id="alienHeader">Alien Travel Calculator</h1>
+            <label for="AlienTravelForm">Choose a planet: </label>
+            <table>
+                <select name="Planet">
+                    <option value="Mercury">Mercury</option>
+                    <option value="Venus">Venus</option>
+                    <option value="Mars">Mars</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Saturn">Saturn</option>
+                    <option value="Uranus">Uranus</option>
+                    <option value="Neptune">Neptune</option>
+
+                </select>
+            </table>
+            <br />
+            <label for="AlienTravelForm">Choose a mode of transport: </label>
+            <table>
+                <select name="Transportation">
+                    <option value="Walking">Walking</option>
+                    <option value="Car">Car</option>
+                    <option value="Bullet Train">Bullet Train</option>
+                    <option value="Boeing 747">Boeing 747</option>
+                    <option value="Concorde">Concorde</option>
+                </select>
+            </table>
+            <br />
+            <label for="AlienTravelForm"> Enter your earth Age:</label>
+            <input name="Age" type="text" />
+            <br />
+            <div class="buttonHolder"><input type="submit" value="Calculate Travel Time!" /></div>
+        </div>
+    </form>
+</section>

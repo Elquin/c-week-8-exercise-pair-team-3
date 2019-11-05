@@ -17,5 +17,12 @@ namespace SSGeek.Web.DAL
         {
             throw new NotImplementedException();
         }
+
+        private readonly string connectionString;
+
+        public ForumPostSqlDAO(string connectionString)
+        {
+            this.connectionString = connectionString;
+        }
     }
 }

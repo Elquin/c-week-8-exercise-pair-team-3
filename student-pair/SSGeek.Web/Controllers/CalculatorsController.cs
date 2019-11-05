@@ -29,6 +29,26 @@ namespace SSGeek.Web.Controllers
             return View(model);
         }
 
+
+        public ActionResult AlienAge()
+        {
+            return View();
+        }
+
+        public ActionResult AlienAgeResult(AlienAgeModel model)
+        {
+            return View(model);
+        }
+
+        public ActionResult AlienTravel()
+        {
+            return View();
+        }
+
+        public ActionResult AlienTravelResults(AlienTravelModel model)
+        {
+            return View(model);
+        }
         
 
         private List<SelectListItem> planets = new List<SelectListItem>()

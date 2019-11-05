@@ -20,6 +20,13 @@ namespace SSGeek.Web.DAL
             throw new NotImplementedException();
         }
 
+        private readonly string connectionString;
+
+        public ProductSqlDAO(string connectionString)
+        {
+            this.connectionString = connectionString;
+        }
+
         
     }
 

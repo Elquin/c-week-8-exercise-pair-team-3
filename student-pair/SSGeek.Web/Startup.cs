@@ -32,7 +32,13 @@ namespace SSGeek.Web
             });
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            string connectionString = Configuration.GetConnectionString("Default"); 
+
+            services.AddScoped<IProductDAO, ProductSqlDAO>(d => new ProductSqlDAO(connectionString));
+            services.AddScoped<IForumPostDAO, ForumPostSqlDAO>(d => new ForumPostSqlDAO(connectionString));
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

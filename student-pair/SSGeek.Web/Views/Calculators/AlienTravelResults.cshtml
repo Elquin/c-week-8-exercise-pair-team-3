@@ -1,0 +1,15 @@
+﻿@model AlienTravelModel
+@{
+    ViewData["Title"] = "AlienTravelResults";
+    string planetImg = ($"/images/{Model.Planet.ToLower()}.jpg");
+}
+
+<section id="calculatorResult" class="centeredPanel">
+    <span class="planets">
+        <img src="@planetImg" alt="@Model.Planet" />
+        <p>Traveling by @Model.Transportation you will reach @Model.Planet in @Model.TravelTime.ToString("0.00") years. You will be @Model.AgeAfterTravel.ToString("0.00") years old.</p>
+    </span>
+
+
+
+</section>
