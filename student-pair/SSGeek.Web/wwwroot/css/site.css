@@ -206,3 +206,7 @@ section.centeredPanel {
         font-weight: bold;
         text-align: center;
     }
+
+    #AWSubmit{
+        text-align: center;
+    }
