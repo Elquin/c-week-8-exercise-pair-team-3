@@ -2,10 +2,14 @@
 
 @{
     ViewData["Title"] = "Alien Weight Result";
+    string planetImg = ($"/images/{Model.Planet.ToLower()}.jpg");
 }
 
 
 <section id="calculatorResult" class="centeredPanel">
-    @Model.AlienWeight
+    <span><img src="@planetImg" alt="@Model.Planet" /> 
+    If you are @Model.EarthWeight lbs on planet Earth, you would weigh @Model.AlienWeight lbs on @Model.Planet</span>
+
+
 
 </section>
