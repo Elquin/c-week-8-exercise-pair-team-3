@@ -206,3 +206,7 @@ section.centeredPanel {
         font-weight: bold;
         text-align: center;
     }
+
+    .buttonHolder {
+        margin-left: 30%;
+    }
