@@ -207,6 +207,6 @@ section.centeredPanel {
         text-align: center;
     }
 
-    #AWSubmit{
-        text-align: center;
+    .buttonHolder {
+        margin-left: 30%;
     }
