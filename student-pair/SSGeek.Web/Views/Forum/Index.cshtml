@@ -1,0 +1,25 @@
+﻿@model IList<ForumPost>
+@{
+    ViewData["Title"] = "Index";
+    bool tableShaded = false;
+}
+
+<section class="centeredPanel">
+    <h2>Solar System Geek Forum</h2>
+    <p>Post a Message</p>
+
+    @foreach (ForumPost post in Model)
+    {
+        <div class="post @(tableShaded ? "shaded" : "")" id="ifrum_post">
+            <table>
+                <tr>
+                    <h4>@post.Subject</h4>
+                    by @post.UserName on @post.PostDate.Date at @post.PostDate.TimeOfDay<br /><br />
+                    <p>@post.Message</p>
+                </tr>
+            </table>
+        </div>
+        tableShaded = !tableShaded;
+    }
+    </section>
+

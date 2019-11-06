@@ -211,3 +211,14 @@ section.centeredPanel {
     .buttonHolder {
         margin-left: 30%;
     }
+
+
+
+    .shaded {
+        background-color: lightgrey;
+    }
+
+    .post {
+        padding-top: 7px;
+        padding-left: 10px;
+    }
