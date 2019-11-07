@@ -234,4 +234,14 @@ section.centeredPanel {
     }
 
 
+.postSuccessful {
+    background-color: lightgreen;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 7px;
+}
+
     

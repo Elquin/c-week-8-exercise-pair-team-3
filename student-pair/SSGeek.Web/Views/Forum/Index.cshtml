@@ -10,7 +10,7 @@
 
     @if (TempData["postSaved"] != null)
     {
-        <span class="postSuccessful">@TempData["postSaved"]</span>
+        <div class="postSuccessful">@TempData["postSaved"]</div>
     }
 
     @foreach (ForumPost post in Model)
