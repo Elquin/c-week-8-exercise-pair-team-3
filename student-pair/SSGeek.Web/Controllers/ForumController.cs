@@ -24,5 +24,18 @@ namespace SSGeek.Web.Controllers
             IList<ForumPost> posts = forumDAO.GetAllPosts();
             return View(posts);
         }
+
+        [HttpGet]
+        public ActionResult NewPost()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult NewPost(ForumPost post)
+        {
+            forumDAO.SaveNewPost(post);
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace SSGeek.Web.DAL
         public IList<ForumPost> GetAllPosts()
         {
             IList<ForumPost> allPosts = new List<ForumPost>();
-            string postSql = @"SELECT * FROM forum_post";
+            string postSql = @"SELECT * FROM forum_post ORDER BY post_date DESC";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
