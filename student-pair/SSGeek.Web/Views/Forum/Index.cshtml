@@ -8,6 +8,11 @@
     <h2>Solar System Geek Forum</h2>
     <div id="newPostLink"><a asp-controller="Forum" asp-action="Newpost">Post a Message</a></div>
 
+    @if (TempData["postSaved"] != null)
+    {
+        <span class="postSuccessful">@TempData["postSaved"]</span>
+    }
+
     @foreach (ForumPost post in Model)
     {
         <div class="post @(tableShaded ? "shaded" : "")" id="ifrum_post">
