@@ -39,6 +39,12 @@ namespace Validation.Web.Controllers
             return RedirectToAction("ConfirmRegister");
         }
 
+        [HttpGet]
+        public IActionResult ConfirmRegister()
+        {
+            return View();
+        }
+
         // GET: User/Login
         // Return the empty login view
         [HttpGet]
