@@ -1,0 +1,28 @@
+﻿@model IList<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="centeredPanel">
+    <h2>Solar System Geek Gift Shop</h2>
+    <div id="fixText">
+        @foreach (Product product in Model)
+        {
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td><img class="productImage" src="~/images/@product.ImageName" /></td>
+                        <td id="fixText">@product.Name <br/> <a href="~/store/details/@product.ProductId">$@product.Price</a></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        }
+    </div>
+</section>
+
+
