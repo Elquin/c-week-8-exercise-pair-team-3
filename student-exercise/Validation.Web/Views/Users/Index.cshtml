@@ -1,0 +1,26 @@
+﻿@model LoginViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="get">
+
+    <div asp-validation-summary="All" class="error"></div>
+
+    <table>
+        <tr>
+            <td><label asp-for="Email">Email:</label></td>
+            <td><input asp-for="Email" /><span asp-validation-for="Email" class="error"></span></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Password">Password:</label></td>
+            <td><input type="password" asp-for="Password" /><span asp-validation-for="Password" class="error"></span></td></td>
+        </tr>
+            <td></td>
+            <td><input type="submit" value="SaveReview" /></td>
+        </tr>
+    </table>
+
+</form>
